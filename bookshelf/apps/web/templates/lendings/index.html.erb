@@ -1,0 +1,16 @@
+<h2>All Lendings</h2>
+
+<% if lendings.any? %>
+  <div id="lendings">
+    <% lendings.each do |lending| %>
+      <div class="lending">
+        <h2><%= lending.title %></h2>
+        <p><%= lending.first_name %> <%= lending.last_name %></p>
+        <p><%= lending.address %></p>
+        <p><%= lending.phone %></p>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">No books being lent out yet.</p>
+<% end %>
