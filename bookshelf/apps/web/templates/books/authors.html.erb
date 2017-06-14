@@ -1,0 +1,13 @@
+<h2>All Authors</h2>
+
+<% if books.any? %>
+  <div id="authors">
+    <% books.each do |book| %>
+      <div class="author">
+        <h2><%= book.author %></h2>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">There are no authors yet.</p>
+<% end %>
