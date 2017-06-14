@@ -3,6 +3,7 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
+get '/lendings', to: 'lendings#index'
 
 post '/books',    to: 'books#create'
 get '/books/new', to: 'books#new'
